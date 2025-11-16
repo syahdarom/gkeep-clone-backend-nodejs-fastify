@@ -1,8 +1,8 @@
-# GKeep Clone Back-End Application
+# A Note-Taking Back-End Application Project
 
 ## Description
 
-A personal back-end application project for serving a note-taking service. Inspired by Google Keep.
+A note-taking back-end application personal project. Inspired by Google Keep.
 
 ## Technology Stack
 
