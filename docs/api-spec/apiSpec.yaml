@@ -1,0 +1,46 @@
+openapi: 3.0.4
+info:
+  title: A GKeep Clone RESTful API Application
+  version: 0.1.0
+  description: An OpenAPI specification for the GKeep Clone RESTful API application. The specification is in initial development.
+  contact:
+    name: Syahda Romansyah
+    email: syahdarom@outlook.com
+  license:
+    name: MIT License
+    url: https://opensource.org/license/mit
+servers:
+  - url: http://localhost:{port}/api
+    description: Local development server
+    variables:
+      port:
+        default: '3000'
+paths:
+  '/ok':
+    get:
+      tags:
+        - OK
+      summary: Gets an OK message.
+      description: Gets an OK message.
+      responses:
+        '200':
+          description: A successful response with an OK message data.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  code:
+                    type: number
+                  data:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+              example:
+                success: true
+                code: 200
+                data:
+                  message: ok
